@@ -1,4 +1,24 @@
+<h1>{{title}}</h1>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<br>
+  Edad 1:
+  <input type="number" [(ngModel)]="edadUno" >
+<br>
 
-Hola
+
+<br>
+  Edad 2:
+  <input type="number" [(ngModel)]="edadDos" >
+<br>
+
+
+<h3>Suma: {{suma}}</h3>
+<h3>Promedio: {{promedio}}</h3>
+
+
+<br>
+<button (click)=Calcular()> Calcular </button>
+<button (click)=LimpiarDatos()> Limpiar cuadros de texto </button>
+
+<br>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * <router-outlet></router-outlet>-->
